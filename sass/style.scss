@@ -26,3 +26,20 @@ a {
     padding: 10px 10px 0 10px;
     text-decoration: none;
 }
+
+.restart-group {
+    position: absolute;
+}
+
+.restart-button {
+    position: relative;
+    bottom: 50vh;
+    left: 0px;
+    font-size: 22px;
+    background: $color-buttons;
+    color: $color-font;
+}
+
+.button-group {
+    margin-bottom: 20px;
+}

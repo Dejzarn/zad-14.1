@@ -6,3 +6,8 @@ var flkty = new Flickity(elem, {
     pageDots: false,
     hash: true
 });
+
+var btnRestart = document.querySelector('.restart-button');
+btnRestart.addEventListener('click', function () {
+    flkty.select(0);
+});
