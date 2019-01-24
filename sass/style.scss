@@ -43,3 +43,9 @@ a {
 .button-group {
     margin-bottom: 20px;
 }
+
+.progress-bar {
+    height: 20px;
+    width: 0;
+    background: $color-buttons;
+}

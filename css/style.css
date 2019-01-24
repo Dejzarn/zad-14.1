@@ -41,4 +41,10 @@ a {
   margin-bottom: 20px;
 }
 
+.progress-bar {
+  height: 20px;
+  width: 0;
+  background: #333;
+}
+
 /*# sourceMappingURL=style.css.map */
