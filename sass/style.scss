@@ -13,9 +13,11 @@ $color-font: #ffd;
     max-width: 1200px;
     text-align: center;
 
-    h2 {
+    h2,
+    p {
         color: $color-font;
     }
+
 }
 
 a {

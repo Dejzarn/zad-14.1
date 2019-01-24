@@ -11,7 +11,8 @@
   text-align: center;
 }
 
-.container h2 {
+.container h2,
+.container p {
   color: #ffd;
 }
 
