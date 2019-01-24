@@ -17,3 +17,12 @@ $color-font: #ffd;
         color: $color-font;
     }
 }
+
+a {
+    font-size: 22px;
+    color: $color-font;
+    background-color: $color-buttons;
+    margin: 5px;
+    padding: 10px;
+    text-decoration: none;
+}
