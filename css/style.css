@@ -48,4 +48,9 @@ a {
   background: #333;
 }
 
+#map {
+  height: 40vh;
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */

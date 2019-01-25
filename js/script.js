@@ -30,3 +30,18 @@
         progress = Math.max(0, Math.min(1, progress));
         progressBar.style.width = progress * 100 + '%';
     });
+
+    function initMap() {
+        var wijkaanzee = {
+            lat: 52.491,
+            lng: 4.596
+        };
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 4,
+            center: wijkaanzee
+        });
+        var marker = new google.maps.Marker({
+            position: wijkaanzee,
+            map: map
+        });
+    }
