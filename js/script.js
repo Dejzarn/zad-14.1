@@ -1,5 +1,3 @@
-    // mustache
-
     var templateSlide = document.getElementById('template-carousel').innerHTML;
     var carousel = document.querySelector('.main-carousel');
 
@@ -14,7 +12,6 @@
     var elem = document.querySelector('.main-carousel');
 
     var flkty = new Flickity(elem, {
-        // options
         cellAlign: 'left',
         contain: true,
         pageDots: false,
@@ -31,17 +28,20 @@
         progressBar.style.width = progress * 100 + '%';
     });
 
-    function initMap() {
-        var wijkaanzee = {
-            lat: 52.491,
-            lng: 4.596
-        };
+
+    window.initMap = function () {
         var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 4,
-            center: wijkaanzee
+            zoom: 2,
+            center: data[0].coords
         });
-        var marker = new google.maps.Marker({
-            position: wijkaanzee,
-            map: map
-        });
+
+        var markers = [];
+
+        for (let i = 0; i < data.length; i++) {
+            markers[i] = new google.maps.Marker({
+                position: data[i].coords,
+                map: map
+
+            });
+        }
     }
