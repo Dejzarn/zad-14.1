@@ -1,3 +1,5 @@
+history.pushState("", document.title, window.location.pathname);
+
 var templateSlide = document.getElementById('template-carousel').innerHTML;
 var carousel = document.querySelector('.main-carousel');
 
